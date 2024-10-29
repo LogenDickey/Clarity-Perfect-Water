@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dickey Family - Pure Water Journey</title>
+    <style>
+        :root {
+            --primary-blue: #3498db;
+            --light-blue: #ebf7ff;
+            --dark-blue: #2980b9;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        }
+
+        body {
+            background: white;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        h1, h2, h3, h4 {
+            margin: 1rem 0;
+        }
+
+        .profile {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #ebf7ff;
+            border-radius: 10px;
+        }
+
+        .profile img {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 10px;
+            margin: 1rem 0;
+        }
+
+        .benefits {
+            margin: 2rem 0;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .details-section {
+            margin: 2rem 0;
+        }
+
+        .accordion {
+            margin: 1rem 0;
+            border: 1px solid #e1e1e1;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .accordion-header {
+            background: #ebf7ff;
+            padding: 1rem;
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .accordion-header:hover {
+            background: #d4ebff;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-top: 1px solid #e1e1e1;
+        }
+
+        .accordion-content.active {
+            display: block;
+        }
+
+        .accordion-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .accordion-content li {
+            margin: 1rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .accordion-content h4 {
+            margin-top: 2rem;
+            color: #2980b9;
+        }
+
+        .accordion-content h4:first-child {
+            margin-top: 0;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: #3498db;
+            color: white;
+            margin: 2rem 0;
+            border-radius: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #3498db;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .floating-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #3498db;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .floating-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            
+            .floating-button {
+                bottom: 1rem;
+                right: 1rem;
+                padding: 0.8rem 1.5rem;
+                font-size: 0.9rem;
+            }
+            
+            .profile img {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Transform Your Life With Pure Water</h1>
+            <p>Join us in experiencing the incredible benefits of clean, energizing, and revitalizing water</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="profile">
+            <h2>Meet the Dickey Family</h2>
+            <p>We discovered the power of pure water, and it changed our lives!</p>
+            <img src="/api/placeholder/400/300" alt="Don and Logen Dickey">
+            <p>Don (48) and Logen (23) Dickey, passionate about helping others transform their health through the power of pure water</p>
+        </section>
+
+        <section class="details-section">
+            <h2>Discover How Pure Water Can Transform Your Life</h2>
+            
+            <div class="accordion">
+                <div class="accordion-header">💪 Feel Better & Look Better</div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>💫 Natural energy boost without caffeine crashes</li>
+                        <li>⚡ Support your weight loss journey through improved metabolism</li>
+                        <li>✨ Clearer, more hydrated skin from better water absorption</li>
+                        <li>💪 Faster workout recovery and less muscle soreness</li>
+                        <li>😴 Better sleep and morning freshness</li>
+                        <li>🧘‍♀️ Reduced bloating and improved digestion</li>
+                        <li>🌟 Mental clarity and sustained energy throughout the day</li>
+                        <li>🔋 Support your body's natural detox processes</li>
+                        <li>⭐ Feel younger and more energetic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-header">🧪 What Makes Our Water Special</div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>💧 Crystal clear, amazing-tasting water your whole family will love</li>
+                        <li>🌿 Natural minerals your body craves for optimal health</li>
+                        <li>⚡ Powerful antioxidants that fight aging and inflammation</li>
+                        <li>🧬 Advanced hydrogen technology for better cellular health</li>
+                        <li>✨ Pure, clean water free from harmful contaminants</li>
+                        <li>🌊 Naturally alkaline water without artificial additives</li>
+                        <li>💝 Better hydration that you can feel in days</li>
+                        <li>🌟 Superior to expensive bottled waters</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-header">💰 Smart Investment in Your Health</div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>💵 Save thousands annually on bottled water</li>
+                        <li>🏠 Convenient home installation - no more heavy water bottles</li>
+                        <li>🌍 Eliminate roughly 1,000 plastic bottles per year</li>
+                        <li>⚡ Cheaper than most coffee habits - for better energy!</li>
+                        <li>💝 One system serves your whole family</li>
+                        <li>🎁 30-day satisfaction guarantee - love it or return it</li>
+                        <li>✨ Simple annual maintenance - that's it!</li>
+                        <li>💪 Invest in your health now, feel the benefits for years</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-header">🏆 Why People Trust Us</div>
+                <div class="accordion-content">
+                    <h4>✅ Quality You Can Trust</h4>
+                    <ul>
+                        <li>🏅 Hospital-grade water quality</li>
+                        <li>🌟 Used and trusted by health professionals</li>
+                        <li>💎 Premium materials and construction</li>
+                        <li>🛡️ Full certification by FDA, NSF, and SGS</li>
+                    </ul>
+
+                    <h4>❤️ Customer Experience</h4>
+                    <ul>
+                        <li>🎯 Easy installation process</li>
+                        <li>🔄 Simple annual filter change</li>
+                        <li>💝 30-day risk-free trial</li>
+                        <li>👨‍👩‍👧‍👦 Thousands of happy families</li>
+                        <li>🤝 Outstanding customer support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-header">🔬 Our Advanced Technology</div>
+                <div class="accordion-content">
+                    <h4>Five Steps to Perfect Water:</h4>
+                    <ul>
+                        <li>1️⃣ Deep cleaning of your tap water</li>
+                        <li>2️⃣ Removal of 800+ harmful substances</li>
+                        <li>3️⃣ Ultra-pure filtration for complete safety</li>
+                        <li>4️⃣ Addition of essential minerals your body needs</li>
+                        <li>5️⃣ Enrichment with powerful antioxidants</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Transform Your Health?</h2>
+            <p>Join thousands of satisfied families enjoying pure, energizing water every day!</p>
+            <p style="font-size: 1.2em; margin: 1rem 0;">🎁 Limited Time Offer Available!</p>
+            <a href="https://www.clarityperfect.com/donalddickey" class="button">Get Your Water System Today!</a>
+        </section>
+    </div>
+
+    <a href="https://www.clarityperfect.com/donalddickey" class="floating-button">Transform Your Water Today! 💧</a>
+
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling;
+                content.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
